@@ -6,7 +6,7 @@ const ProductManager = require('./ProductManager');
 
 //App y PORT
 const app = express();
-const PORT = 8000;
+const PORT = 8080;
 
 //Uso del JSON
 app.use(express.json());
