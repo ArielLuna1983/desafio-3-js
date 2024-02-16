@@ -65,14 +65,11 @@ module.exports = class ProductManager {
         const product = products.find(product => product.id === id);
         if (product) {
             return product;
-        }else {
-            console.error( 4 + ") Producto no encontrado");
-        }
+        };
         }catch (error) {
             console.error(error);
             throw error;
         }
-        
     };
 
 //Actualiza el archivo
@@ -110,5 +107,4 @@ module.exports = class ProductManager {
             throw error;
         }
     };
-        
 };

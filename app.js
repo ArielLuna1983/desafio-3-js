@@ -39,7 +39,7 @@ app.get('/products/:pid', async (req, res) => {
             res.send(product);
         } else {
             res.status(404).send({status: "error", message: "No se encuentra el ID"});
-        }
+        };
     } catch (error) {
         res.status(418).send({error, message:"no funca"})
     }
